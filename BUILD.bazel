@@ -1,0 +1,12 @@
+load("@rules_python//python:py_binary.bzl", "py_binary")
+load("@tar.bzl", "tar")
+
+py_binary(
+    name = "hello",
+    srcs = ["hello.py"],
+)
+
+tar(
+    name = "hello_tar",
+    srcs = [":hello"],
+)

@@ -1,0 +1,2 @@
+common --repo_env=RULES_PYTHON_PYCACHE_DIR=/dev/null
+common --@rules_python//python/config_settings:venvs_use_declare_symlink=no
